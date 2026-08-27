@@ -1,0 +1,25 @@
+{
+  "name": "relatorios-padrao-olms",
+  "private": true,
+  "version": "16.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "jspdf": "^3.0.2",
+    "pdf-lib": "^1.17.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "utif": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "@vitejs/plugin-react": "^5.0.2",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.3"
+  }
+}
