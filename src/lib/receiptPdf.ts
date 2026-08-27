@@ -201,14 +201,14 @@ function drawLegend(doc:jsPDF,r:ReceiptReport,logo:string,y:number){
     const c=severityColors(g);
     const h=Math.max(7,wrap(doc,d,150).length*3.6+3);
 
-    doc.setFillColor(...c.fill);
+    doc.setFillColor(c.fill[0], c.fill[1], c.fill[2]);
     doc.setDrawColor(...BORDER);
     doc.rect(M,y,27,h,'FD');
     doc.rect(M+27,y,PAGE_W-2*M-27,h,'FD');
 
     doc.setFont('helvetica','bold');
     doc.setFontSize(7);
-    doc.setTextColor(...c.text);
+    doc.setTextColor(c.text[0], c.text[1], c.text[2]);
     doc.text(g,M+2,y+4.6);
 
     doc.setFont('helvetica','normal');
